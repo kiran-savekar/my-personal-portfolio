@@ -1,0 +1,797 @@
+body{  background-color:#150941;}
+/******************************Academics**********************************/
+#my-academics{overflow:hidden;}
+#my-academics h2{text-align:center;color:cyan;font-size:40px;margin:0%; margin-bottom:30px;}
+.back-img {
+  background-color:#150941;
+  background-image: url("img/sc-bg.png");
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+/* Float three columns side by side */
+.column {
+  float: left;
+  width: 33.3%;
+  /*padding:20px;*/
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/**********************************************/
+.testimotionals .card {
+  position:relative;
+  overflow:hidden;
+  width:300px;
+  height:auto;
+  margin:0 auto;
+  /*background:#F1F1F2;*/
+  background:rgba(255,255,255,0.1);
+  padding:20px;
+  box-sizing:border-box;
+  text-align:center;
+  box-shadow:0 10px 40px rgba(0,0,0,.5);
+}
+@media screen and (max-width:1200px){
+.testimotionals .card {
+  margin:auto;
+  width: 33%;
+  /*padding: 10px;*/
+  position:relative;
+  overflow:hidden;
+  width:auto;
+  background:transparent;
+  box-sizing:border-box;
+  text-align:center;
+  box-shadow:0 10px 40px rgba(0,0,0,.5)
+}
+.testimotionals .card .content .image {
+  width:auto;
+}
+}
+.testimotionals .card .layer {
+  z-index:1;
+  position:absolute;
+  top:calc(100% - 2px);
+  height:100%;
+  width:100%;
+  left:0;
+  background:linear-gradient(to top, #150941, #F80040);
+  transition:0.5s; 
+}
+
+.testimotionals .card .content {
+  z-index:2; 
+  position:relative;
+}
+.testimotionals .card:hover  .layer{
+  top:0;
+}
+.testimotionals .card .content p {
+  font-size:20px;
+  line-height:24px;
+  color:#F1F1F2;
+  text-align:justify;
+}
+.testimotionals .card .content .image {
+  width:auto;
+  margin:0 auto;
+  /*border-radius:50%;*/
+  overflow:hidden;
+  /*border: 4px solid white;*/
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+}
+.testimotionals .card .content .details h3 {
+font-size:18px;
+color:white;
+}
+.testimotionals .card .content .details h3 span {
+font-size:18px;
+color:purple;
+  transition:0.5s;
+}
+.testimotionals .card:hover .content .details h3 span {
+  color:white;
+  position:relative;
+}
+ 
+/**************************Skills*****************************/
+
+/* Float four columns side by side */
+#my-skills h4{
+  margin:8%;
+}
+.myskills-column {
+  float: left;
+  width: 50%;
+}
+
+.myskills-column h2{
+  font-size:40px;
+  text-align:center;
+  color:cyan;
+}
+
+
+
+/* Remove extra left and right margins, due to padding */
+.myskills-row {  margin:2% 2%; background-color:transparent; }
+
+/* Clear floats after the columns */
+.myskills-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .myskills-column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Progress bar CSS */
+
+.progress *:not([data-progress]) {
+  margin: 5px 0;
+  font-size: 20px;
+  color:white;
+}
+
+.progress {
+  width:auto;
+ /* max-width: 500px;*/
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+
+.progress [data-progress] {
+  height: 25px;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25) inset;
+  border-radius: 10px;
+  margin: 5px 0 10px 0;
+  overflow: hidden;
+}
+
+[data-progress]::after {
+  content: "";
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-image: linear-gradient(#99caff, #1a88ff 50%, #007bff 50%);
+  /*width: 0;*/
+  height: 100%;
+  box-sizing: border-box;
+  font-size: 15px;
+  color: white;
+  padding: 0 3px;
+  transition: 3s;
+}
+
+[data-progress].animate-progress::after {
+  content: attr(data-progress) "%";
+  width: var(--animate-progress);
+}
+
+/****************Certification*****************************************/
+#ki-certify {overflow:hidden;}
+#ki-certify h2{
+  font-size:40px;
+  text-align:center;
+  color:cyan;
+}
+.certi-container {
+
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top:0%;
+}
+
+@media (min-width: 768px) {
+    .certi-container {
+        width: 650px;
+    }
+}
+
+@media (min-width: 992px) {
+    .certi-container {
+        width: 950px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .certi-container {
+        width: 1000;
+    }
+}
+
+.certi {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #150941;          /*********Background Color********/
+    text-align: center;
+}
+
+.certi .certi-card {
+    display: grid;
+    grid-template-columns:repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 50px;
+    margin-bottom: 70px;
+    margin-top: 60px;
+}
+
+.certi .certi-card .cert-box{
+    padding: 10px;
+    text-align: center;
+   background-image: linear-gradient(#150941, #F80040);          
+    border: 2px solid orange;
+    position: relative;
+    border-radius:25px;
+}
+
+.certi .cert-box h4{
+    color: yellow;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.certi .cert-box a{
+  color:yellow;
+  text-decoration: none;
+}
+
+.certi .cert-box a:hover{
+  color:blue;
+}
+
+
+.certi .cert-box p{
+    line-height: 1.7;
+    font-size: 16px;
+    color: white;
+}
+
+.certi .cert-box img{
+    padding: 15px;
+    width: 50px;
+    height: 50px;
+    background-color: #150941;
+    position: absolute;
+    top: calc(-75px / 2);
+    left: 39%;
+    transition: 1s;
+    border: 2px solid orange;
+    border-radius:40px;
+}
+
+.certi .cert-box:hover{
+   background-image: linear-gradient(#2A0030, #770B7B);
+    border: 2px solid white;
+}
+
+.certi .cert-box:hover img{
+    background-color: white;
+    border: 2px solid white;
+}
+
+.certi .cert-box:hover p{
+    color: white;
+    transition: 1s;
+}
+
+/***************************Blogs*******************************************/
+#kiran-blogs{overflow:hidden;margin:0%;}
+
+#kiran-blogs h2{
+  font-size:40px;
+  text-align:center;
+  color:cyan;
+}
+
+/* Float four columns side by side */
+.blogs-column {
+  float: left;
+  width: 30%;
+  padding:15px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.blogs-row {  margin:5%; margin-top:2.5%; background-color:transparent; }
+
+/* Clear floats after the columns */
+.blogs-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .blogs-column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    padding:2%;
+  }
+}
+
+
+/* Style the counter cards */
+.blogs-card {
+    border-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgba(10, 0, 0, 0.1);
+    overflow: hidden;
+    width: auto;
+    text-align: center;
+    background-color: #f1f1f1;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.blogs-card:hover,
+.blogs-card:focus,
+.blogs-card:active {
+    background-color:orange;
+    transform: scale(1.1);
+}
+
+@media screen and (max-width:600px){
+.blogs-card:hover,
+.blogs-card:focus,
+.blogs-card:active {
+    background-color:;
+    transform: scale(0.9);
+}
+}
+
+.blogs-card-header img {
+    width: 100%;
+    height: 200px;
+    object-fit: 94%;
+}
+
+.blogs-card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.blogs-card h3{
+    margin-bottom:0%;
+    font-size:20px;
+}
+
+.blogs-tag {
+    background: #ccc;
+    border-radius: 50px;
+    font-size: 12px;
+    margin: 0;
+    color: #fff;
+    padding: 2px 10px;
+    text-transform: uppercase;
+}
+
+.blogs-tag-teal {
+    background-color: #92d4e4;
+}
+
+.blogs-tag-purple {
+    background-color: #3d1d94;
+}
+
+.blogs-tag-pink {
+    background-color: #c62bcb;
+}
+
+
+.blogs-card-body p {
+    font-size: 18px;
+    text-align:justify;
+    margin-top:2%;
+    margin-bottom:3%;
+    color:black;
+}
+
+.blogs-user {
+    display: flex;
+}
+
+.blogs-user img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.blogs-user-info h5 {
+    margin: 0;
+}
+
+.blogs-user-info small {
+    color: #888785;
+}
+/**************Blogs Button***********************/
+.blogs-btn {
+  width:auto;
+  padding: 8px;
+  color: #fff;
+  font-size: 15px;
+ /* letter-spacing: 2px;*/
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
+
+.blogs-btn-center{
+  margin:auto;
+  width:50%;
+  padding:5px;
+}
+
+.btn--changeGradient {
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+}
+.btn--changeGradient:hover {
+  animation: changeGradientAnimation 8s linear infinite;
+}
+@keyframes changeGradientAnimation {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+
+/************************Github and Blogger**************************************/
+#kiran-social{
+    overflow:hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.ki-social {
+    position: relative;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.ki-social .ki-social-card {
+    position: relative;
+    border-radius: 5px;
+}
+
+.ki-social .ki-social-card .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.9s;
+    z-index: 1;
+    background:#CCE5FF;/*Front color*/
+}
+
+
+.ki-social .ki-social-card .icon .fa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    transition: 0.7s;
+    /*color: #fff;*/
+}
+
+.ki-social .ki-social-card .front {
+    width: 250px;
+    height: 150px;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+.ki-social .ki-social-card .front.front1 {
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.ki-social .ki-social-card:hover .front.front1{
+    background: #ff0057;
+    transform: translateY(0px);
+    width: 200px;
+    height: 100px;
+    padding-left: 50px;
+    opacity: 0;
+}
+
+.ki-social .ki-social-card .front.front1 .content {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.ki-social .ki-social-card:hover  .front.front1 .content{
+    opacity: .8;
+}
+
+.ki-social .ki-social-card .front.front1 .content i{
+    max-width: 100px;
+}
+
+.ki-social .ki-social-card .front.front2 {
+    position: relative;
+    background: #00cc00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+    transform: translateY(-50px);
+}
+
+.ki-social .ki-social-card:hover .front.front2{
+    transform: translateY(0);
+}
+
+.ki-social .ki-social-card .front.front2 .content p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #fff;
+    font-size:20px;
+}
+
+.ki-social .ki-social-card .front.front2 .content h3 {
+    margin: 0 0 10px 0;
+    padding: 0;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    color: #414141;
+} 
+
+.ki-social a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.ki-social a:hover{
+    border-bottom: 4px solid #e9cc26;
+    transition: border .1s ease-out;
+}
+
+.ki-social a:active{
+    color: black;
+}
+@media screen and (max-width: 768px){
+   
+.ki-social .ki-social-card .front.front2 .content p {
+    font-size:15px;
+}
+
+.ki-social .ki-social-card .front.front2 .content h3 {
+    margin: 0 0 10px 0;
+    padding: 0;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    color: #414141;
+} 
+}
+
+@media screen and (max-width: 600px){
+    .ki-social{
+        grid-template-columns:1fr;
+        grid-gap: 0px;
+        margin:0%;
+    }
+
+}
+
+/******************Contact Me *********************************/
+
+#ki-message{overflow:hidden;}
+
+#ki-message h2{
+  font-size:40px;
+  text-align:center;
+  color:cyan;
+}
+/* Float four columns side by side */
+.contact-me-column{
+  float: left;
+  width: 42%;
+  padding:40px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.contact-me-row {  margin:1% 8%; background-color:transparent; }
+
+/* Clear floats after the columns */
+.contact-me-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 700px) {
+  .contact-me-column {
+    width: auto;
+    display: block;
+    margin:0%;
+  }
+   .contact-me-row {  margin:0%;}
+
+}
+
+/***********************************************************/
+
+#ki-message p{
+	font-size:25px;
+	text-align:center;
+	color:white; 
+	padding-top:20px;
+}
+
+/* Add styles to 'container' class */
+
+.ct-me {
+	padding: 10px;
+  	width:auto;
+  	background-color: #E3F2FD;
+  	box-shadow: 5px 5px 8px cyan;
+  	margin:4px auto;
+	border-radius: 10px;
+	text-align:left;
+}
+
+.ct-me h5 {
+  	text-align: center;
+  	color: #5b6574;
+  	font-size: 30px;
+  	padding: 0px 0 0px 0;
+}
+
+
+/* Add styles to 'label' selector */
+
+label {
+	font-size: 0.85em;
+	margin-left: 12px;
+}
+
+/* Add styles to 'input' and 'textarea' selectors */
+
+input[type=text],input[type=email], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 0px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+/* Add styles to show 'focus' of selector */
+
+input[type=text]:focus,input[type=email]:focus, textarea:focus {
+	border: 1px solid green;
+}
+
+/* Add styles to the submit button 
+
+input[type=submit] {
+	background: #64B5F6;
+	margin: 0 auto;
+	outline: 0;
+	color: white;
+	border: 0;
+	padding: 12px 24px;
+	border-radius: 4px;
+	transition: all ease-in-out 0.1s;
+	position: relative;
+	display: inline-block;
+	text-align: center;
+}
+
+/* Add styles for 'focus' property 
+
+input[type=submit]:focus {
+	background: #A5D6A7;
+	color: whitesmoke;
+}
+
+/* Style 'hover' property */
+
+input[type=submit]:hover {
+	background: #2196F3;
+}
+
+/* Align items to center of the 'div' with the class 'center' */
+.ct-me-center {
+	text-align: center;
+}*/
+
+element.style {
+    background-color: #e3f2fd;
+    color: #e3f2fd;
+    z-index: 2147483647;
+}
+
+.ct-me form input[type="submit"] {
+  	width: 100px;
+        border-radius:40px;
+  	padding: 15px;
+ 	margin-top: 20px;
+  	background-color: #3274d6;
+  	border: 0;
+  	cursor: pointer;
+  	font-weight: bold;
+  	color: #ffffff;
+  	transition: background-color 0.2s;
+}
+.ct-me form input[type="submit"]:hover{
+  background-color:green;
+}
+
+/****************************************Footer*********************************/
+#footer h2{
+  font-size:30px;
+  text-align:center;
+  color:cyan;
+}
+.footer-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  text-align:center;
+  color:white;
+  font-size:25px;
+}
+ 
+
+#footer a{
+height: 56px;
+width: 56px;
+display: inline-block;
+margin: 10px;
+}                                 
