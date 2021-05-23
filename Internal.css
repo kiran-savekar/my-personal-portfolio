@@ -336,7 +336,7 @@ color:purple;
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (min-width: 600px) {
   .blogs-column {
     width: 29%;
     display: block;
@@ -670,11 +670,11 @@ color:purple;
 
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (min-width: 760px) {
   .contact-me-column {
-    width: 40%;
+    width: 35%;
     display: block;
-    margin:0%;
+    margin:2%;
   }
    .contact-me-row {  margin:0%;}
 }
@@ -735,7 +735,6 @@ input[type=text]:focus,input[type=email]:focus, textarea:focus {
 }
 
 /* Add styles to the submit button 
-
 input[type=submit] {
 	background: #64B5F6;
 	margin: 0 auto;
@@ -749,14 +748,11 @@ input[type=submit] {
 	display: inline-block;
 	text-align: center;
 }
-
 /* Add styles for 'focus' property 
-
 input[type=submit]:focus {
 	background: #A5D6A7;
 	color: whitesmoke;
 }
-
 /* Style 'hover' property */
 
 input[type=submit]:hover {
@@ -812,4 +808,4 @@ height: 56px;
 width: 56px;
 display: inline-block;
 margin: 10px;
-}                                 
+}                        
