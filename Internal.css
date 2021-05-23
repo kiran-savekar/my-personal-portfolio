@@ -336,6 +336,15 @@ color:purple;
   }
 }
 
+@media screen and (max-width: 1000px) {
+  .blogs-column {
+    width: 29%;
+    display: block;
+    margin-bottom: 0px;
+    padding:2%;
+  }
+}
+
 
 /* Style the counter cards */
 .blogs-card {
@@ -659,6 +668,15 @@ color:purple;
   }
    .contact-me-row {  margin:0%;}
 
+}
+
+@media screen and (max-width: 960px) {
+  .contact-me-column {
+    width: 40%;
+    display: block;
+    margin:0%;
+  }
+   .contact-me-row {  margin:0%;}
 }
 
 /***********************************************************/
